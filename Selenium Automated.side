@@ -1,0 +1,1484 @@
+{
+  "id": "9e9590c7-45d4-463e-b3bc-ac8b1c3dbd02",
+  "version": "2.0",
+  "name": "Assessment",
+  "url": "https://academybugs.com/find-bugs",
+  "tests": [{
+    "id": "cda1521d-1eab-47c9-9432-07672e4fbedc",
+    "name": "1 - Results crash",
+    "commands": [{
+      "id": "d4b12589-090b-4b20-8f19-6522563c8360",
+      "comment": "",
+      "command": "open",
+      "target": "/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5d1d7b3-1d29-4e09-b4d9-03cf4eddd885",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a89a39fc-930a-412a-8309-b1cd38a208ac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=10",
+      "targets": [
+        ["linkText=10", "linkText"],
+        ["css=.what-we-offer-pagination-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'10')]", "xpath:link"],
+        ["xpath=//section[@id='ec_product_page']/div/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//section/div/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2d6c33a-e605-4ee5-8173-ca32c68e6fea",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=10",
+      "targets": [
+        ["linkText=10", "linkText"],
+        ["css=.what-we-offer-pagination-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'10')]", "xpath:link"],
+        ["xpath=//section[@id='ec_product_page']/div/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//section/div/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aff6d728-5121-41d9-9b3d-56c2306e51dd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=10",
+      "targets": [
+        ["linkText=10", "linkText"],
+        ["css=.what-we-offer-pagination-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'10')]", "xpath:link"],
+        ["xpath=//section[@id='ec_product_page']/div/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//section/div/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cd15875c-18ce-4caf-b7c4-a25ad9c43998",
+    "name": "2 - Increase past two (slow)",
+    "commands": [{
+      "id": "b770d217-06e0-408c-b66c-080699c49742",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb8b1e01-aadb-452c-bd1a-a55aba7cd065",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbf9498c-8b28-4d09-876d-dce0fb91efd2",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_add_to_cart_5",
+      "targets": [
+        ["id=ec_add_to_cart_5", "id"],
+        ["linkText=ADD TO CART", "linkText"],
+        ["css=#ec_add_to_cart_5", "css:finder"],
+        ["xpath=(//a[contains(text(),'ADD TO CART')])[2]", "xpath:link"],
+        ["xpath=//a[@id='ec_add_to_cart_5']", "xpath:attributes"],
+        ["xpath=//div[@id='ec_product_image_dnk-yellow-shoes']/div[3]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://academybugs.com/my-cart/?ec_action=addtocart&model_number=dnk-yellow-shoes')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4024b046-eb6e-40c8-99e5-3cb46c14a984",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Cart",
+      "targets": [
+        ["linkText=View Cart", "linkText"],
+        ["css=.ec_product_added_to_cart > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View Cart')]", "xpath:link"],
+        ["xpath=//section[@id='ec_product_page']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/my-cart/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a24285f-aa7a-4f64-8843-10454a07b572",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_plus",
+      "targets": [
+        ["css=.ec_plus", "css:finder"],
+        ["xpath=//input[@value='+']", "xpath:attributes"],
+        ["xpath=//tr[@id='ec_cartitem_row_714576']/td[5]/table/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3657b563-062e-4ed9-b5e2-b86ffcb69d3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_plus",
+      "targets": [
+        ["css=.ec_plus", "css:finder"],
+        ["xpath=//input[@value='+']", "xpath:attributes"],
+        ["xpath=//tr[@id='ec_cartitem_row_714576']/td[5]/table/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee297dde-a1a8-41f6-af2e-b580237b14ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_cartitem_update_714576",
+      "targets": [
+        ["id=ec_cartitem_update_714576", "id"],
+        ["css=#ec_cartitem_update_714576", "css:finder"],
+        ["xpath=//div[@id='ec_cartitem_update_714576']", "xpath:attributes"],
+        ["xpath=//tr[@id='ec_cartitem_row_714576']/td[5]/table/tbody/tr[2]/td/div", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "227259ff-eaae-4076-9d3a-8a876e4cada5",
+    "name": "3 - Change currency",
+    "commands": [{
+      "id": "edef4b40-d520-4db6-acf0-05de032d76f2",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c882250d-9d19-44e2-9f6e-da52eb6c588c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a52e433-b66e-4b32-89c4-1076de69b6e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_add_to_cart_5",
+      "targets": [
+        ["id=ec_add_to_cart_5", "id"],
+        ["linkText=ADD TO CART", "linkText"],
+        ["css=#ec_add_to_cart_5", "css:finder"],
+        ["xpath=(//a[contains(text(),'ADD TO CART')])[2]", "xpath:link"],
+        ["xpath=//a[@id='ec_add_to_cart_5']", "xpath:attributes"],
+        ["xpath=//div[@id='ec_product_image_dnk-yellow-shoes']/div[3]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://academybugs.com/my-cart/?ec_action=addtocart&model_number=dnk-yellow-shoes')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bdbf783-02cd-4cc3-9e3a-9c383835b267",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Cart",
+      "targets": [
+        ["linkText=View Cart", "linkText"],
+        ["css=.ec_product_added_to_cart > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View Cart')]", "xpath:link"],
+        ["xpath=//section[@id='ec_product_page']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/my-cart/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "076ffbde-5165-4160-9091-ad9ab3ae9476",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_currency_conversion",
+      "targets": [
+        ["id=ec_currency_conversion", "id"],
+        ["name=ec_currency_conversion", "name"],
+        ["css=#ec_currency_conversion", "css:finder"],
+        ["xpath=//select[@id='ec_currency_conversion']", "xpath:attributes"],
+        ["xpath=//form[@id='currency']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2736eac-5ef3-4963-99f4-93e3807d9e73",
+      "comment": "",
+      "command": "select",
+      "target": "id=ec_currency_conversion",
+      "targets": [],
+      "value": "label=EUR"
+    }]
+  }, {
+    "id": "b9e7ccaf-29b6-4403-8cad-7a099025e731",
+    "name": "4 - Space before e (not always works)",
+    "commands": [{
+      "id": "1b0917a9-57d7-496b-8d2d-071ba651afff",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3f6b747-531e-4411-b9a9-fdd05f8d7c06",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a6a992f-fb9a-422b-bc06-4725d496d8d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_add_to_cart_5",
+      "targets": [
+        ["id=ec_add_to_cart_5", "id"],
+        ["linkText=ADD TO CART", "linkText"],
+        ["css=#ec_add_to_cart_5", "css:finder"],
+        ["xpath=(//a[contains(text(),'ADD TO CART')])[2]", "xpath:link"],
+        ["xpath=//a[@id='ec_add_to_cart_5']", "xpath:attributes"],
+        ["xpath=//div[@id='ec_product_image_dnk-yellow-shoes']/div[3]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://academybugs.com/my-cart/?ec_action=addtocart&model_number=dnk-yellow-shoes')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc23dedb-463b-4891-b5ac-8ed083ed4f60",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Cart",
+      "targets": [
+        ["linkText=View Cart", "linkText"],
+        ["css=.ec_product_added_to_cart > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View Cart')]", "xpath:link"],
+        ["xpath=//section[@id='ec_product_page']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/my-cart/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67622cb2-ba8a-40cd-91a5-d71f1a9edf9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_cartitem_delete_714576",
+      "targets": [
+        ["id=ec_cartitem_delete_714576", "id"],
+        ["css=#ec_cartitem_delete_714576", "css:finder"],
+        ["xpath=//div[@id='ec_cartitem_delete_714576']", "xpath:attributes"],
+        ["xpath=//tr[@id='ec_cartitem_row_714576']/td/div", "xpath:idRelative"],
+        ["xpath=//td/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edbcbb6b-c5c6-436d-a604-bc5245612bbe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=RETURN TO STOR      E",
+      "targets": [
+        ["linkText=RETURN TO STOR      E", "linkText"],
+        ["css=.ec_cart_empty_button", "css:finder"],
+        ["xpath=//a[contains(text(),'RETURN TO STOR      E')]", "xpath:link"],
+        ["xpath=//article[@id='post-1374']/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'RETURN TO STOR      E')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "53cfc77d-07a4-4232-a38d-f40715f39d54",
+    "name": "5 - Hot item infinite load",
+    "commands": [{
+      "id": "84c5284a-c773-4f97-9213-b9f32aa3d263",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78e121e7-7efa-45d7-b8a9-51ef9b4832fe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09a22b17-33a3-4782-9b06-024f3c50d91d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dnk-yellow-shoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e37e5c7-d7a4-4f96-bdd3-0afc127afe8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_image_product_widget_anchor-bracelet_1_0 > img",
+      "targets": [
+        ["css=#ec_image_product_widget_anchor-bracelet_1_0 > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://academybugs.com/wp-content/uploads/2020/06/product-accessory2.jpg')]", "xpath:img"],
+        ["xpath=//a[@id='ec_image_product_widget_anchor-bracelet_1_0']/img", "xpath:idRelative"],
+        ["xpath=//aside[3]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29999bce-ae51-4bbb-b23e-82e2ec70f030",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_cart_billing_info_update_loader",
+      "targets": [
+        ["css=.ec_cart_billing_info_update_loader", "css:finder"],
+        ["xpath=//article[@id='post-1820']/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b87e1449-4d12-407b-8ee5-aeaa7343f708",
+    "name": "6 - Yellow/Orange typo",
+    "commands": [{
+      "id": "ea18b514-76d1-409a-b9b2-6d552889d894",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ceefd396-0b43-4bad-a451-6b46b7b6485e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14fcd3e8-6a67-40af-b049-c950ee353a5e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Select Options",
+      "targets": [
+        ["linkText=Select Options", "linkText"],
+        ["css=#ec_product_image_3061856 > .academy-product-description-wrapper > .ec_product_addtocart_container a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Select Options')])[2]", "xpath:link"],
+        ["xpath=//div[@id='ec_product_image_3061856']/div[3]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://academybugs.com/store/denim-coat/')])[5]", "xpath:href"],
+        ["xpath=//li[8]/div/div[3]/div[2]/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14353d01-5dbb-4d6f-94c2-90e6c8730b50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_details_swatch:nth-child(2) > img",
+      "targets": [
+        ["css=.ec_details_swatch:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@title='Orang']", "xpath:img"],
+        ["xpath=//article[@id='post-6192']/div/section/div/div[3]/form/div[5]/div[2]/ul/li[2]/img", "xpath:idRelative"],
+        ["xpath=//li[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19966535-89db-479b-ad44-6f615dabaa8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_details_option_label_selected",
+      "targets": [
+        ["css=.ec_details_option_label_selected", "css:finder"],
+        ["xpath=//article[@id='post-6192']/div/section/div/div[3]/form/div[5]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f69e149e-4a6d-4e35-8f2b-e62927ff57c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popmake-4406 > .pum-close",
+      "targets": [
+        ["css=#popmake-4406 > .pum-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='popmake-4406']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d33aae9-2542-4472-b4fa-abb7b395c0c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_details_swatch:nth-child(5) > img",
+      "targets": [
+        ["css=.ec_details_swatch:nth-child(5) > img", "css:finder"],
+        ["xpath=//img[@title='Yelow']", "xpath:img"],
+        ["xpath=//article[@id='post-6192']/div/section/div/div[3]/form/div[5]/div[2]/ul/li[5]/img", "xpath:idRelative"],
+        ["xpath=//li[5]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5a531f2-7139-4e43-9d82-81fd27045070",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_details_option_label_selected",
+      "targets": [
+        ["css=.ec_details_option_label_selected", "css:finder"],
+        ["xpath=//article[@id='post-6192']/div/section/div/div[3]/form/div[5]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "07e0e24c-99b2-4712-9d46-b66a410ad7e8",
+    "name": "7 - Submit comment crash",
+    "commands": [{
+      "id": "b805b88d-f9e0-471a-8a12-f8d50e0f51f6",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80126c07-862a-483b-bd77-f96935db64f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cb83180-91c8-42b2-b0dc-10747eba1e2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dnk-yellow-shoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b7e7eb9-4191-4da4-b8dc-99286921cd83",
+      "comment": "",
+      "command": "click",
+      "target": "id=comment",
+      "targets": [
+        ["id=comment", "id"],
+        ["name=comment", "name"],
+        ["css=#comment", "css:finder"],
+        ["xpath=//textarea[@id='comment']", "xpath:attributes"],
+        ["xpath=//form[@id='commentform']/p[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcd64da7-cfd3-499a-ad58-6241f2d5b388",
+      "comment": "",
+      "command": "type",
+      "target": "id=comment",
+      "targets": [
+        ["id=comment", "id"],
+        ["name=comment", "name"],
+        ["css=#comment", "css:finder"],
+        ["xpath=//textarea[@id='comment']", "xpath:attributes"],
+        ["xpath=//form[@id='commentform']/p[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "387e44e1-7078-432a-8818-3d980a121615",
+      "comment": "",
+      "command": "click",
+      "target": "id=author",
+      "targets": [
+        ["id=author", "id"],
+        ["name=author", "name"],
+        ["css=#author", "css:finder"],
+        ["xpath=//input[@id='author']", "xpath:attributes"],
+        ["xpath=//form[@id='commentform']/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8316efad-b3cf-423a-b386-66e3f3f77dc7",
+      "comment": "",
+      "command": "type",
+      "target": "id=author",
+      "targets": [
+        ["id=author", "id"],
+        ["name=author", "name"],
+        ["css=#author", "css:finder"],
+        ["xpath=//input[@id='author']", "xpath:attributes"],
+        ["xpath=//form[@id='commentform']/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "0d8506fb-a5fa-4e73-a3f6-4abd0a21ba04",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='commentform']/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e554df01-b3e2-4bf2-acd3-7eac50546409",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='commentform']/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "a@q"
+    }, {
+      "id": "31147baa-bf4d-4e30-8990-0eb5890c92e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=url",
+      "targets": [
+        ["id=url", "id"],
+        ["name=url", "name"],
+        ["css=#url", "css:finder"],
+        ["xpath=//input[@id='url']", "xpath:attributes"],
+        ["xpath=//form[@id='commentform']/div/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "536ad1ce-d03f-4615-859e-c5e357ea7cb2",
+      "comment": "",
+      "command": "type",
+      "target": "id=url",
+      "targets": [
+        ["id=url", "id"],
+        ["name=url", "name"],
+        ["css=#url", "css:finder"],
+        ["xpath=//input[@id='url']", "xpath:attributes"],
+        ["xpath=//form[@id='commentform']/div/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "b7dc4995-6ac5-4913-8d3c-faf72d3bdf2b",
+      "comment": "",
+      "command": "click",
+      "target": "id=academy-comment-submit",
+      "targets": [
+        ["id=academy-comment-submit", "id"],
+        ["name=submit", "name"],
+        ["css=#academy-comment-submit", "css:finder"],
+        ["xpath=//button[@id='academy-comment-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='commentform']/p[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Post Comment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "94d682b8-c511-4652-8c43-e6ff36502bc0",
+    "name": "8 - Sign in button overlap",
+    "commands": [{
+      "id": "3d765491-4606-4da2-aa73-597a3940b4c6",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5815bae6-2ffc-4bf3-8b27-a9257a148a66",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1056x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5dc17a3-9025-4701-8bb8-0aa6fb594cc0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dnk-yellow-shoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71c5c257-2ab4-4e5a-a850-34f676014958",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_login_widget_button",
+      "targets": [
+        ["css=.ec_login_widget_button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='login-from-side-menu']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SIGN IN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b7b81486-19e9-477e-ade5-d1f526418ee6",
+    "name": "9 - Filter by price",
+    "commands": [{
+      "id": "ce570664-6bbd-4571-83c1-381cbe7f81d1",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9748eb35-2f73-4ead-bd00-8fc9451560e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8dd7a802-8cea-4393-91f4-78fbe1dbea97",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dnk-yellow-shoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8eb873cf-c351-4efc-8b3f-132554c7430b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=$15.00 - $19.99 (1)",
+      "targets": [
+        ["linkText=$15.00 - $19.99 (1)", "linkText"],
+        ["css=div:nth-child(1) > .menu_link", "css:finder"],
+        ["xpath=//a[contains(text(),'$15.00 - $19.99 (1)')]", "xpath:link"],
+        ["xpath=//aside[@id='ec_pricepointwidget-2']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/?&perpage=25&pricepoint=7')]", "xpath:href"],
+        ["xpath=//aside[5]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'$15.00 - $19.99 (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0061f07a-2100-4a36-b25b-4eac2efcda50",
+    "name": "10 - New login other language",
+    "commands": [{
+      "id": "ab6e23ad-4067-40c4-b759-33462ba59e2f",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42fdf4aa-382f-48bc-93b5-bf37655160ab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a7c3487-e037-4c4a-9c9b-4250d5c87e96",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dnk-yellow-shoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eea9c4b-6145-401a-abf7-736ed7e33aed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_login_widget_button",
+      "targets": [
+        ["css=.ec_login_widget_button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='login-from-side-menu']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SIGN IN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59e337f8-8efd-4d45-b889-56044dafde82",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ec_login_widget_button",
+      "targets": [
+        ["css=.ec_login_widget_button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='login-from-side-menu']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SIGN IN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03b5ea99-e15d-4a10-8652-f93618dfa0e6",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ec_login_widget_button",
+      "targets": [
+        ["css=.ec_login_widget_button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='login-from-side-menu']/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SIGN IN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68c1a111-518a-49d4-bd92-917d18eeef03",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popmake-4406 > .pum-close",
+      "targets": [
+        ["css=#popmake-4406 > .pum-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='popmake-4406']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77440a25-0933-4bc7-82a2-7a63051ed5c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.untranslated-russian",
+      "targets": [
+        ["css=.untranslated-russian", "css:finder"],
+        ["xpath=//article[@id='post-1375']/div/div[3]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f05bae22-966d-4585-b44a-51160a4d528b",
+    "name": "11 - Misaligned password",
+    "commands": [{
+      "id": "db55d2de-c413-48d5-b8bc-2b08066be9ab",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49e90917-a5d6-48d4-b5c1-46e2826a877c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1062x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e37ecfa-a04e-45f7-a8b0-f71e92025a70",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login for Pricing",
+      "targets": [
+        ["linkText=Login for Pricing", "linkText"],
+        ["css=.ec_product_addtocart_container:nth-child(2) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login for Pricing')])[2]", "xpath:link"],
+        ["xpath=//div[@id='ec_product_image_dark-blue-denim-jeans']/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://academybugs.com/account/')])[2]", "xpath:href"],
+        ["xpath=//li[11]/div/div[3]/div/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06632593-1a8e-4718-86be-c1c099d49d1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-password-label-bug",
+      "targets": [
+        ["css=.login-password-label-bug", "css:finder"],
+        ["xpath=//div[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='display-account-login-form-start']/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b04e0eb3-f26c-456f-b3ba-a8b6e214028f",
+    "name": "12 - Sign In vertical misalign",
+    "commands": [{
+      "id": "6cde28a0-ed6e-4689-8928-75a2a6daf5ba",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b55a83fb-3d00-40e3-ab3d-8663f10edb97",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28d2ed37-1515-493c-953c-a09e8411ccc5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login for Pricing",
+      "targets": [
+        ["linkText=Login for Pricing", "linkText"],
+        ["css=.ec_product_addtocart_container:nth-child(2) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login for Pricing')])[2]", "xpath:link"],
+        ["xpath=//div[@id='ec_product_image_dark-blue-denim-jeans']/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://academybugs.com/account/')])[2]", "xpath:href"],
+        ["xpath=//li[11]/div/div[3]/div/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a08a218-4a4a-4198-b2dd-7faefbdac02a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_account_button",
+      "targets": [
+        ["css=.ec_account_button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='display-account-login-form-start']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'SIGN IN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e746d4ec-5446-415b-9c37-5918bb86e6f6",
+    "name": "13 - Crash retrieve password",
+    "commands": [{
+      "id": "5336a2d7-f17f-4934-aa9c-02b4fc262fb9",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5aeb5c10-8a60-4daa-88ef-1e6b8a8a174d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b27a2220-8c65-48dc-b846-a94eb12aca4d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login for Pricing",
+      "targets": [
+        ["linkText=Login for Pricing", "linkText"],
+        ["css=.ec_product_addtocart_container:nth-child(2) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login for Pricing')])[2]", "xpath:link"],
+        ["xpath=//div[@id='ec_product_image_dark-blue-denim-jeans']/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://academybugs.com/account/')])[2]", "xpath:href"],
+        ["xpath=//li[11]/div/div[3]/div/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5026b0ae-1a4e-4db4-b083-3051c9395456",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot Your Password?",
+      "targets": [
+        ["linkText=Forgot Your Password?", "linkText"],
+        ["css=.ec_account_login_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot Your Password?')]", "xpath:link"],
+        ["xpath=//form[@id='display-account-login-form-start']/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/account/?ec_page=forgot_password')]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot Your Password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b90108ed-118d-4292-90c7-de16a843134a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_cart_button_row:nth-child(3) > .ec_account_button",
+      "targets": [
+        ["css=.ec_cart_button_row:nth-child(3) > .ec_account_button", "css:finder"],
+        ["xpath=//input[@value='RETRIEVE PASSWORD']", "xpath:attributes"],
+        ["xpath=//div[@id='ec_account_forgot_password']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7961eb45-210d-492d-8c05-5ae50dc94970",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_account_forgot_password_email",
+      "targets": [
+        ["id=ec_account_forgot_password_email", "id"],
+        ["name=ec_account_forgot_password_email", "name"],
+        ["css=#ec_account_forgot_password_email", "css:finder"],
+        ["xpath=//input[@id='ec_account_forgot_password_email']", "xpath:attributes"],
+        ["xpath=//div[@id='ec_account_forgot_password']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33f0b2dc-d6d7-45e2-a8f6-5d02cdbf0921",
+      "comment": "",
+      "command": "type",
+      "target": "id=ec_account_forgot_password_email",
+      "targets": [
+        ["id=ec_account_forgot_password_email", "id"],
+        ["name=ec_account_forgot_password_email", "name"],
+        ["css=#ec_account_forgot_password_email", "css:finder"],
+        ["xpath=//input[@id='ec_account_forgot_password_email']", "xpath:attributes"],
+        ["xpath=//div[@id='ec_account_forgot_password']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a@a"
+    }, {
+      "id": "cfa0a17d-5e59-434e-b501-2e7ff09e437d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_cart_button_row:nth-child(3) > .ec_account_button",
+      "targets": [
+        ["css=.ec_cart_button_row:nth-child(3) > .ec_account_button", "css:finder"],
+        ["xpath=//input[@value='RETRIEVE PASSWORD']", "xpath:attributes"],
+        ["xpath=//div[@id='ec_account_forgot_password']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a7f790e0-b826-4acd-876b-eeed0ba05d0c",
+    "name": "14 - $100 more than total",
+    "commands": [{
+      "id": "0e8e4a93-ac12-42fe-8127-9db07449d95d",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "601a0712-a054-450e-9d28-cbd40c31a491",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f79b21e0-b715-4be2-8be6-02eb873c59ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_add_to_cart_5",
+      "targets": [
+        ["id=ec_add_to_cart_5", "id"],
+        ["linkText=ADD TO CART", "linkText"],
+        ["css=#ec_add_to_cart_5", "css:finder"],
+        ["xpath=(//a[contains(text(),'ADD TO CART')])[2]", "xpath:link"],
+        ["xpath=//a[@id='ec_add_to_cart_5']", "xpath:attributes"],
+        ["xpath=//div[@id='ec_product_image_dnk-yellow-shoes']/div[3]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://academybugs.com/my-cart/?ec_action=addtocart&model_number=dnk-yellow-shoes')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "610568a3-b8d1-4333-88f5-7ccb60d7a6dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Cart",
+      "targets": [
+        ["linkText=View Cart", "linkText"],
+        ["css=.ec_product_added_to_cart > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View Cart')]", "xpath:link"],
+        ["xpath=//section[@id='ec_product_page']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/my-cart/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c2bcbc6-f273-4fd2-bd16-13749e7c2d6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_cart_total",
+      "targets": [
+        ["id=ec_cart_total", "id"],
+        ["css=#ec_cart_total", "css:finder"],
+        ["xpath=//div[@id='ec_cart_total']", "xpath:attributes"],
+        ["xpath=//article[@id='post-1374']/div/section/div[4]/div[6]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a9054fac-afd3-4424-84cc-388036838c2d",
+    "name": "15 - MySpace infinite load",
+    "commands": [{
+      "id": "88de0748-f362-422b-bb87-59855a10c6a0",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea84bb14-54f3-4f5b-b244-412c08f35cc0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e56cec0-1ee6-4cfe-9f11-8ae8a6b9b38e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dnk-yellow-shoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcc8f7ea-81b4-4460-a646-7cc749279e49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_myspace img",
+      "targets": [
+        ["css=.ec_myspace img", "css:finder"],
+        ["xpath=//img[@alt='MySpace']", "xpath:img"],
+        ["xpath=//article[@id='post-1675']/div/section/div/div[3]/div[2]/div[7]/a/img", "xpath:idRelative"],
+        ["xpath=//div[7]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c3f3577-4952-4d9c-a015-db692a4a6d77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_cart_billing_info_update_loader",
+      "targets": [
+        ["css=.ec_cart_billing_info_update_loader", "css:finder"],
+        ["xpath=//article[@id='post-1829']/div/p/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d0e2dad2-b445-4d83-a3e0-0da6b4c367d4",
+    "name": "16 - Manufacturer link broken",
+    "commands": [{
+      "id": "245a5442-789f-4f1b-9447-600f32fc2619",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed2aa0dc-6fd7-410c-9549-187eb6f2cfd7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72017346-c028-4bc4-a2e4-01353bf4ec5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dnk-yellow-shoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32ed7312-fcd5-4d97-a80c-2b651371a4f0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=DNK",
+      "targets": [
+        ["linkText=DNK", "linkText"],
+        ["css=#manufacturer-bug > a", "css:finder"],
+        ["xpath=//a[contains(text(),'DNK')]", "xpath:link"],
+        ["xpath=//div[@id='manufacturer-bug']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academy-test.com/stored/dnk/')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'DNK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "09c891f9-c946-458a-bc1d-d96b9f52cb5e",
+    "name": "17 - Descriptions another language",
+    "commands": [{
+      "id": "78340dfa-4359-4c57-b3a2-16ef8f918b81",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "101f57e0-f4bb-4e9a-81bd-fbaab644931d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6330c986-491f-46c9-a04e-6743402b83bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dnk-yellow-shoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7de8591-8e5e-4e12-960f-a842f6c37dec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_details_description",
+      "targets": [
+        ["css=.ec_details_description", "css:finder"],
+        ["xpath=//article[@id='post-1675']/div/section/div/div[3]/form/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f8a3527-030e-40f6-9466-343896612f11",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popmake-4406 > .pum-close",
+      "targets": [
+        ["css=#popmake-4406 > .pum-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='popmake-4406']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ea2e5da-b784-4992-8473-1f189df1892a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.academy-bug > p",
+      "targets": [
+        ["css=.academy-bug > p", "css:finder"],
+        ["xpath=//article[@id='post-1675']/div/section/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ec4e7d2c-773b-45c3-a93e-843428be0626",
+    "name": "18 - Cart popup weird symbols (slow, sometimes wont work)",
+    "commands": [{
+      "id": "4d0d9f7b-1e54-4e2c-999c-fef011dc02a8",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9420985-5ea7-41c2-b43e-f8c0e1b1fe41",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d00f57f-fd12-4dc9-86f0-2713b3efe288",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_add_to_cart_5",
+      "targets": [
+        ["id=ec_add_to_cart_5", "id"],
+        ["linkText=ADD TO CART", "linkText"],
+        ["css=#ec_add_to_cart_5", "css:finder"],
+        ["xpath=(//a[contains(text(),'ADD TO CART')])[2]", "xpath:link"],
+        ["xpath=//a[@id='ec_add_to_cart_5']", "xpath:attributes"],
+        ["xpath=//div[@id='ec_product_image_dnk-yellow-shoes']/div[3]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://academybugs.com/my-cart/?ec_action=addtocart&model_number=dnk-yellow-shoes')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eca68e0-cfc3-4c40-8c6f-0e698d4b9a21",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dnk-yellow-shoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d56f648-54e2-4f47-bd44-09e9cefd73c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=ec_cart_widget_row_714601",
+      "targets": [
+        ["id=ec_cart_widget_row_714601", "id"],
+        ["css=#ec_cart_widget_row_714601", "css:finder"],
+        ["xpath=//div[@id='ec_cart_widget_row_714601']", "xpath:attributes"],
+        ["xpath=//aside[@id='ec_cartwidget-2']/div/div/div/div[3]/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ec69460f-b39f-4b02-95b1-b70c10cfe2e3",
+    "name": "19 - Dark gray jeans picture cut off",
+    "commands": [{
+      "id": "3cd54e96-409b-47c0-997a-067d9b470a9c",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "272e154c-7479-4ab9-b5da-0700bf76b4a3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1062x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc4d247e-39bf-4d64-b812-00686043d507",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dark-grey-jeans > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dark-grey-jeans > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dark-grey-jeans']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dark-grey-jeans/')]", "xpath:href"],
+        ["xpath=//li[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "67ce3f06-111b-4398-81fb-afcc77152f79",
+    "name": "20 - Twitter share cointent",
+    "commands": [{
+      "id": "20642686-124e-4d47-9d23-fd7434a8c3ba",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "022382e5-eccd-4deb-97cb-c0175a4558c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5da6f405-ce33-4cf5-abb4-2ea07e7f0246",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover",
+      "targets": [
+        ["css=#ec_product_image_effect_dnk-yellow-shoes > .ec_image_link_cover", "css:finder"],
+        ["xpath=//div[@id='ec_product_image_effect_dnk-yellow-shoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://academybugs.com/store/dnk-yellow-shoes/')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d43cd668-9307-4f99-a1cb-5959643444c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_twitter img",
+      "targets": [
+        ["css=.ec_twitter img", "css:finder"],
+        ["xpath=//img[@alt='Twitter']", "xpath:img"],
+        ["xpath=//article[@id='post-1675']/div/section/div/div[3]/div[2]/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3085",
+      "windowTimeout": 2000
+    }, {
+      "id": "96aaf500-5d51-4d02-9542-5a57929c372e",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21560ec3-6e4e-45fa-be1a-3f82d56a2522",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3085}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "889f860a-a8a8-4468-8bcd-5d97ffb7e7a1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b3d1a79-3ba4-49f7-aa65-9d15546628f1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1e97ca7b-50a9-463e-92f0-c23d863b7575",
+    "name": "21 - Pink/Green crash",
+    "commands": [{
+      "id": "ecd07a27-99f9-46cb-9736-9a1cd51f3b51",
+      "comment": "",
+      "command": "open",
+      "target": "https://academybugs.com/find-bugs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4111a1e8-5a4c-4174-a349-feae90495722",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d78e09d-f3d8-4bb0-a839-8736246809bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Select Options",
+      "targets": [
+        ["linkText=Select Options", "linkText"],
+        ["css=#ec_product_image_3061856 > .academy-product-description-wrapper > .ec_product_addtocart_container a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Select Options')])[2]", "xpath:link"],
+        ["xpath=//div[@id='ec_product_image_3061856']/div[3]/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://academybugs.com/store/denim-coat/')])[5]", "xpath:href"],
+        ["xpath=//li[8]/div/div[3]/div[2]/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b579b1a9-0de8-40db-b20d-3b3c243e233c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_details_swatch:nth-child(3) > img",
+      "targets": [
+        ["css=.ec_details_swatch:nth-child(3) > img", "css:finder"],
+        ["xpath=//img[@title='Pink']", "xpath:img"],
+        ["xpath=//article[@id='post-6192']/div/section/div/div[3]/form/div[5]/div[2]/ul/li[3]/img", "xpath:idRelative"],
+        ["xpath=//li[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fdc0d52-34e3-4363-96a0-186ed7003d0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_plus",
+      "targets": [
+        ["css=.ec_plus", "css:finder"],
+        ["xpath=//input[@value='+']", "xpath:attributes"],
+        ["xpath=//article[@id='post-6192']/div/section/div/div[3]/form/div[9]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f789de4-fc00-42c0-894c-99093112416a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ec_plus",
+      "targets": [
+        ["css=.ec_plus", "css:finder"],
+        ["xpath=//input[@value='+']", "xpath:attributes"],
+        ["xpath=//article[@id='post-6192']/div/section/div/div[3]/form/div[9]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d15e9d24-e491-4426-a5ee-082608d3ee8b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ec_plus",
+      "targets": [
+        ["css=.ec_plus", "css:finder"],
+        ["xpath=//input[@value='+']", "xpath:attributes"],
+        ["xpath=//article[@id='post-6192']/div/section/div/div[3]/form/div[9]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "568a49b5-2813-4e6b-8e33-d4d6084b51cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popmake-4406 > .pum-close",
+      "targets": [
+        ["css=#popmake-4406 > .pum-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='popmake-4406']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70dfa3ce-aa7c-4451-870a-3cd643ec2a19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_details_swatch:nth-child(4) > img",
+      "targets": [
+        ["css=.ec_details_swatch:nth-child(4) > img", "css:finder"],
+        ["xpath=//img[@title='Green']", "xpath:img"],
+        ["xpath=//article[@id='post-6192']/div/section/div/div[3]/form/div[5]/div[2]/ul/li[4]/img", "xpath:idRelative"],
+        ["xpath=//li[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e6debef-ac01-4579-9ebd-1b57d87ef5f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ec_plus",
+      "targets": [
+        ["css=.ec_plus", "css:finder"],
+        ["xpath=//input[@value='+']", "xpath:attributes"],
+        ["xpath=//article[@id='post-6192']/div/section/div/div[3]/form/div[9]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9be61849-09bb-4613-9c31-41ca01291e63",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cda1521d-1eab-47c9-9432-07672e4fbedc"]
+  }],
+  "urls": ["https://academybugs.com/", "https://academybugs.com/find-bugs"],
+  "plugins": []
+}
